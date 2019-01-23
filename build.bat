@@ -1,0 +1,1 @@
+cl main.cpp SDL.lib opengl32.lib glu32.lib SDLmain.lib Utils.cpp GLUtils.cpp bass.lib /O2 /MD -I"SDL\include" -I"./" /Fetest.exe /link /LIBPATH:"SDL\lib" /SUBSYSTEM:WINDOWS && mt.exe -manifest test.exe.manifest -outputresource:test.exe && test.exe

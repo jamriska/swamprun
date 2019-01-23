@@ -1,0 +1,72 @@
+# START X Y
+#----------
+4 8
+#----------
+# SINK CYCLE DURATION
+# jak dlouho trva jedna faze potapeni, cim mensi tim rychlejs se plosinky potapjeji
+#--------------------
+300
+#--------------------
+# PLATFORM MAP
+# SWAMP = 0  ISLE = 1  DINO = 2  MOVER_AREA = 3
+#------------------
+0 0 0 0 0 0 0 0 0 0
+1 1 1 1 1 0 0 0 0 0
+1 0 0 0 1 0 0 0 0 0
+1 0 1 1 1 1 1 0 0 0
+1 0 1 0 1 0 1 0 0 0
+1 1 1 1 1 0 1 0 0 0
+0 0 1 0 0 0 1 1 1 1
+0 0 1 0 0 0 1 0 0 1
+0 0 1 1 1 1 1 0 0 1
+0 0 0 0 0 0 1 1 1 1
+#------------------
+# SINK MAP
+# cislo = za jak dlouho po startu levelu se plosinka zacne potapet
+#---------------------------------------
+   0   0   0   0   0   0   0   0   0   0
+   23 15  16  17  29   0   0   0   0   0
+   23  0   0   0  29   0   0   0   0   0
+   23  0   0   0  31  32  32   0   0   0
+   24  0   0   0  28   0  33   0   0   0
+   24 25  25  26  28   0   0   0   0   0
+   0   0   0   0   0   0   0  10  10   0
+   0   0   0   0   0   0   0   0   0   0
+   0   0  20  21  22   0   0   0   0   0
+   0   0   0   0   0   0   0   0   0   0
+#---------------------------------------
+# ENTITY MAP
+# 0 = NIC  1 = ENEMY  2 = ITEM  3 = END
+#------------------
+0 0 0 0 0 0 0 0 0 0
+2 0 0 0 2 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 1 0 0 0  
+0 0 0 0 0 0 0 0 0 0  
+0 0 0 0 0 0 1 0 0 0  
+0 0 0 0 0 0 0 0 0 3
+#------------------
+# MOVER ID MAP
+# cislo = index moveru kterej se pohybuje v oblasti mover area vyhrazeny na mape plosinek
+#------------------
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+#------------------
+# MOVERS
+# prvni radek je pocet moveru (muze byt nula)
+# pro kazdy mover nasleduje jeden radek ve tvaru
+# Y X1 X2 WAIT_TIME SLOWNESS
+#------------------
+0
+#------------------
